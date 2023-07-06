@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  background-image: url("image1.jpg"); /* Replace "image1.jpg" with the path to your first background image */
+  background-size: cover;
+  background-position: center;
+  animation: cycleBackground 60s infinite; /* Adjust the time duration as needed */
+}
+
+@keyframes cycleBackground {
+  0% {
+    background-image: url("images/dh1.jpeg"); /* Replace "image1.jpg" with the path to your first background image */
+  }
+  33% {
+    background-image: url("images/dh2.jpeg"); /* Replace "image2.jpg" with the path to your second background image */
+  }
+  66% {
+    background-image: url("images/dh3.jpeg"); /* Replace "image3.jpg" with the path to your third background image */
+  }
+  100% {
+    background-image: url("images/dh1.jpeg"); /* Replace "image1.jpg" with the path to your first background image */
+  }
+}
+header {
+  background-color: #333;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logo img {
+  max-width: 220px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.square-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  transition: transform 0.5s ease;
+  font-weight: bold; /* Add font-weight property to make the text bolder */
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+}
+
+.square-icon:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0);
+}
+
+.square-icon span {
+  text-align: center;
+}
+
+.square-icon a {
+  color: #fff; /* Set link color to white */
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 200px; /* Add a gap of 20px between the square link options */
+}
+
+.training-option {
+  margin-bottom: 20px; /* Add a margin-bottom of 20px to create a gap between the link options */
+  margin-top: 80px;
+  text-decoration: none;
+}
+
+.special-h1 {
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+}
+
+/* Apply a dull filter effect to the background */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adjust the opacity to control the dullness */
+  pointer-events: none; /* Make sure the filter layer does not interfere with mouse interactions */
+}
